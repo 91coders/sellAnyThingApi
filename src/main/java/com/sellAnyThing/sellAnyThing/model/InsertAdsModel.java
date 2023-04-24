@@ -14,11 +14,13 @@ public class InsertAdsModel {
     private String ad_campaign_price;
     private String createdon;
     private String country_code;
+    private String published_on;
+    private String ad_selling_price;
 
     public InsertAdsModel() {
     }
 
-    public InsertAdsModel(String ad_id, String user_id, String ad_category, String ad_latlong, String ad_visibility, String ad_tags, String ad_title, String ad_description, String ad_combo, String ad_expiry, String ad_campaign_price, String createdon, String country_code) {
+    public InsertAdsModel(String ad_id, String user_id, String ad_category, String ad_latlong, String ad_visibility, String ad_tags, String ad_title, String ad_description, String ad_combo, String ad_expiry, String ad_campaign_price, String createdon, String country_code, String published_on, String ad_selling_price) {
         this.ad_id = ad_id;
         this.user_id = user_id;
         this.ad_category = ad_category;
@@ -32,6 +34,24 @@ public class InsertAdsModel {
         this.ad_campaign_price = ad_campaign_price;
         this.createdon = createdon;
         this.country_code = country_code;
+        this.published_on = published_on;
+        this.ad_selling_price = ad_selling_price;
+    }
+
+    public String getPublished_on() {
+        return published_on;
+    }
+
+    public void setPublished_on(String published_on) {
+        this.published_on = published_on;
+    }
+
+    public String getAd_selling_price() {
+        return ad_selling_price;
+    }
+
+    public void setAd_selling_price(String ad_selling_price) {
+        this.ad_selling_price = ad_selling_price;
     }
 
     public String getCountry_code() {
